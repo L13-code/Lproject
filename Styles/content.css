@@ -1,0 +1,113 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
+    background-color: white;
+    border-radius: 12px;
+    border: none;
+    gap: 0;
+    padding: 50px 20px;
+    max-width: 100%;
+    margin: 80px;
+    width: auto;
+    height: auto;
+    overflow: auto;
+    margin-top: -5px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.chapter-image{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+
+.chapter-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    box-sizing: border-box;
+    background-color: beige;
+    height: 220px;
+    width: 200px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    cursor: pointer;  
+}
+
+.chapter-label{
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 5px;
+}
+
+.chapter-title{
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.chapter-label, .chapter-title{
+    font-family: Playwrite AU QLD,Arial;
+    font-size: 12px;
+    width: 100%;
+    
+}
+
+
+@media (max-width: 615px) {
+    .container{
+        grid-template-columns: 1fr;
+
+    }
+}
+
+@media (min-width: 787px) and (max-width: 1229px){
+    .container{
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+}
+
+
+@media (min-width: 1230px) {
+    .container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+}
+
+.chapter-content:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  background-color: #f0f0f0;
+}
+
+
+.chapter-content {
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+#three, #four, #five, #six, #seven,
+#eight, #nine, #ten, #eleven, #twelve,
+#summary{
+    opacity: 0 !important;
+}
+

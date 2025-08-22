@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Cache-Control" content="no-store" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> "Season One"</title>
+        <link rel="stylesheet" href="Styles/general.css">
+        <link rel="stylesheet" href="Styles/content.css">
+        <link rel="stylesheet" href="Styles/head.css">
+        <link rel="stylesheet" href="Styles/modals.css">
+        <link rel="stylesheet" href="Styles/logout.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+            <div class ="header">
+                <div class="welcome" onclick="specialMessage()">
+                        To: My Love              
+                </div>
+                <div class="divider">🍃</div>
+                <div class="season-one">
+                Season One
+                </div>
+                <div class="divider">🍃</div>
+
+                <button class="logout-button" onclick="checkLogout()"> log out</button>
+                
+            </div>
+            <div id="chapter-modal" class="modal-overlay" style="display: none;"></div>
+            
+            <div class="container">
+                <div id="zero" class="chapter-content" onclick="loadZero()">
+                    <img class="chapter-image" src="Images/unexpected.jpg" alt="Unexpected">
+                <div class="chapter-details">
+                    <p class="chapter-label">"Chapter Zero"</p>
+                    <p class="chapter-title">"The Unexpected"</p>
+                </div>
+                    
+                </div>
+                <div id="one" onclick="loadOne()" class="chapter-content">
+                    <img class="chapter-image" src="Images/beginning.jpg" alt="Unexpected">
+                    <div class="chapter-details">
+                        <p class="chapter-label">"Chapter One"</p>
+                        <p class="chapter-title">"The Beginning"</p>
+                    </div>
+                    
+                </div>
+                <div id="two" class="chapter-content">
+                    <img class="chapter-image" src="Images/smilechow.png" alt="Unexpected">
+                    <div class="chapter-details">
+                        <p class="chapter-label">"Chapter Two"</p>
+                        <p class="chapter-title">"Coming Soon"</p>
+                    </div>
+                    
+                </div>
+                <div id="three" class="chapter-content">
+                    <img class="chapter-image" src="Images/smilechow.png" alt="Unexpected">
+                    <div class="chapter-details">
+                        <p class="chapter-label">"Chapter Three"</p>
+                        <p class="chapter-title">"Coming Soon"</p>
+                    </div>
+                    
+                </div>
+                <div id="four" class="chapter-content">
+                    <img class="chapter-image" src="Images/smilechow.png" alt="Unexpected">
+                    <div class="chapter-details">
+                        <p class="chapter-label">"Chapter Four"</p>
+                        <p class="chapter-title">"Coming Soon"</p>
+                    </div>
+                    
+                </div>
+                <div id="five" class="chapter-content">
+                    <img class="chapter-image" src="Images/smilechow.png" alt="Unexpected">
+                    <div class="chapter-details">
+                        <p class="chapter-label">"Chapter Five"</p>
+                        <p class="chapter-title">"Coming Soon"</p>
+                    </div>
+                    
+                </div>
+                <div id="six" class="chapter-content">
+                    <img class="chapter-image" src="Images/smilechow.png" alt="Unexpected">
+                    <div class="chapter-details">
+                        <p class="chapter-label">"Chapter Six"</p>
+                        <p class="chapter-title">"Coming Soon"</p>
+                    </div>
+                    
+                </div>
+                <div id="seven" class="chapter-content">
+                    <img class="chapter-image" src="Images/smilechow.png" alt="Unexpected">
+                    <div class="chapter-details">
+                        <p class="chapter-label">"Chapter Seven"</p>
+                        <p class="chapter-title">"Coming Soon"</p>
+                    </div>
+                    
+                </div>
+                <div id="eight" class="chapter-content">
+                    <img class="chapter-image" src="Images/smilechow.png" alt="Unexpected">
+                    <div class="chapter-details">
+                        <p class="chapter-label">"Chapter Eight"</p>
+                        <p class="chapter-title">"Coming Soon"</p>
+                    </div>
+                    
+                </div>
+                <div id="nine" class="chapter-content">
+                    <img class="chapter-image" src="Images/smilechow.png" alt="Unexpected">
+                    <div class="chapter-details">
+                        <p class="chapter-label">"Chapter Nine"</p>
+                        <p class="chapter-title">"Coming Soon"</p>
+                    </div>
+                    
+                </div>
+                <div id="ten" class="chapter-content">
+                    <img class="chapter-image" src="Images/smilechow.png" alt="Unexpected">
+                    <div class="chapter-details">
+                        <p class="chapter-label">"Chapter Ten"</p>
+                        <p class="chapter-title">"Coming Soon"</p>
+                    </div>
+                    
+                </div>
+                <div id="eleven" class="chapter-content">
+                    <img class="chapter-image" src="Images/smilechow.png" alt="Unexpected">
+                    <div class="chapter-details">
+                        <p class="chapter-label">"Chapter Eleven"</p>
+                        <p class="chapter-title">"Coming Soon"</p>
+                    </div>
+                    
+                </div>
+                <div id="twelve" class="chapter-content">
+                    <img class="chapter-image" src="Images/smilechow.png" alt="Unexpected">
+                    <div class="chapter-details">
+                        <p class="chapter-label">"Chapter Twelve"</p>
+                        <p class="chapter-title">"Coming Soon"</p>
+                    </div>
+                    
+                </div>
+                <div id="summary" class="chapter-content">
+                    <img class="chapter-image" src="Images/smilechow.png" alt="Unexpected">
+                    <div class="chapter-details">
+                        <p class="chapter-label">"Summary"</p>
+                        <p class="chapter-title">"Coming Soon"</p>
+                    </div>
+            </div>
+            <script src="loveStory.js" defer></script>
+            <script src="security.js" defer></script>
+        </body>
+</html>

@@ -1,0 +1,154 @@
+.header{
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+    padding: 0;
+    animation: headerFade 1.2s ease-out forwards;
+    
+}
+
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    flex-shrink: 0;
+    font-family: Playwrite AU QLD,Arial;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -50px;
+    height: 80px;
+    padding-top:30px;
+    text-align: center;
+    border: 2px solid rgb(245, 245, 132);
+    background-color: beige;
+    border-radius: 10px;
+    vertical-align: bottom;
+    cursor: pointer;
+    
+}
+
+.divider {
+    margin: 0 10px;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+
+.season-one{
+    display: flex;
+    flex-shrink: 0;
+    margin-left: 6px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    font-family: Playwrite AU QLD,Arial;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: beige;
+    padding: 10px 100px;
+    border-radius: 10px;
+    border: 2px solid rgb(245, 245, 132);
+    padding-top: 30px;
+
+}
+
+.logout-button{
+    font-family: Playwrite AU QLD,Arial;
+    font-weight: normal;
+    display: flex;
+    flex-shrink: 0;
+    margin: 0 20px 20px 0;
+    height: px;
+    width: 80px;
+    border-radius: 10px;
+    border: none;
+    background-color: beige;
+    transition: box-shadow, transform 0.3s ease, text-shadow 0.3s ease;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.logout-button:hover{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    background-color: #f0f0f0;
+}
+
+
+
+@keyframes blossomFade {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+    filter: blur(4px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05);
+    filter: blur(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+  
+}
+
+
+
+@keyframes headerFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+season-icon {
+  font-size: 1px;
+  margin: 0 10px;
+  animation: blossomFade 1.8s ease-out forwards;
+}
+
+
+@keyframes welcomeSlide {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.welcome:hover, .season-one:hover {
+  animation: welcomeBannerDrop 0.4s ease forwards;
+  text-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+  background-color: #f0f0f0;
+}
+
+
+
+@keyframes welcomeBannerDrop {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
